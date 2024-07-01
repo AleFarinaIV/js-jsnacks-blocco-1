@@ -10,3 +10,6 @@ for (let i = 0; i < guestList.length; i++) {
         document.getElementById('name-true').innerHTML = "Buonasera, lei fa parte degli invitati"
     }
 }
+if (verification === false) {
+    document.getElementById('name-false').innerHTML = "Ci dispiace, lei non fa parte degli invitati"
+}
