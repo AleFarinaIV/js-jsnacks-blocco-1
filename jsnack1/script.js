@@ -7,9 +7,10 @@ let verification = false
 for (let i = 0; i < guestList.length; i++) {
     if (guestList[i].toLowerCase() === name) {
         verification = true
-        document.getElementById('name-true').innerHTML = "Buonasera, lei fa parte degli invitati"
     }
 }
-if (verification === false) {
+if (verification === true) {
+    document.getElementById('name-true').innerHTML = "Buonasera, lei fa parte degli invitati"
+}else {
     document.getElementById('name-false').innerHTML = "Ci dispiace, lei non fa parte degli invitati"
 }
