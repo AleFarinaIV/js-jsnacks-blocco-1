@@ -6,3 +6,10 @@ for (let i = 0; i < strArray.length; i++) {
     intArray.push(parseInt(strArray[i]))
     console.log (intArray)
 }
+
+let sum = 0
+
+for (let i = 0; i < intArray.length; i++) {
+    sum += intArray[i]
+}
+console.log(sum)
