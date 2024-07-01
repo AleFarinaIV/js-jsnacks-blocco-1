@@ -12,6 +12,4 @@ Tramite ciclo FOR gestire le 6 richieste all'utente
     Assegnare a questa variabile il valore(numero) recuperato dalla prompt specifica
     IF numero % 2 !== 0
         inserire il numero recuperato nell'array vuoto
-    else 
-        non fare altro
     mostrare tutto in console
