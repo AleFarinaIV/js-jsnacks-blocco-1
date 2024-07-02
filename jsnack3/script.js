@@ -1,15 +1,13 @@
 let userNumber = prompt("Inserisci qui un numero a 4 cifre")
-const strArray = userNumber.split('')
-const intArray = []
-
-for (let i = 0; i < strArray.length; i++) {
-    intArray.push(parseInt(strArray[i]))
-    console.log (intArray)
-}
 
 let sum = 0
 
-for (let i = 0; i < intArray.length; i++) {
-    sum += intArray[i]
+if (userNumber.length!== 4 || isNaN(userNumber)) {
+    console.log("Devi inserire un numero a 4 cifre!")
+} else {
+    for (let i = 0; i < userNumber.length; i++) {
+        sum += Number(userNumber[i])
+    }
+    console.log(sum)
 }
-console.log(sum)
+
